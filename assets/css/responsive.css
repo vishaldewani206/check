@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* Medium Layout: 1280px. */
+.product-details-title-mob, .as-seen-in-mob, .why-our-product-mob, .why-choose-area-mob{display: none;}
+
+@media only screen and (min-width: 2020px) and (max-width: 10000px) { /*67%*/
+	.container{max-width: 1600px;}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 10000px) {
+	header.sticky:before {opacity: 1;}
+	header.sticky {border-bottom: 1px solid #fff;}
+}
+
+@media (min-width:992px) and (max-width: 1200px) {  
+	.delivers-experience-specification{width: 60%;}
+	.delivers-experience-block{width: 250px;}
+	.delivers-experience-text{padding-right: 15px;}
+}
+
+@media (min-width:100px) and (max-width: 1024px) { 
+	.product-details-content .product-details-title, .product-details-left .as-seen-in, .product-details-left .why-our-product, .why-choose-area{display: none;}
+	.product-details-title-mob, .product-details-title-mob .product-details-title, .as-seen-in-mob, .why-choose-area-mob{display: block;}
+	.as-seen-in-mob .as-seen-in{display: flex;}
+	.row, .footer-area, .form-rating-row{flex-wrap: wrap;}
+	.product-details-left, .product-details-content, .choose-product-nav, .choose-product-for, .why-our-product, .as-seen-in{width: 100%;}
+	.product-details-slider{flex-direction: column-reverse;}
+	.choose-product-nav{padding-top: 10px;}
+	.choose-product-thumb{margin-right: 10px;}
+	.product-details-content{padding: 20px 15px 0px;}
+	.why-our-product-mob{display: block;background-color: #E8F9F7;padding: 5px 15px;margin: 20px -15px 0px;}
+	.slick-initialized .why-our-product-block {text-align: center;}
+	.slick-initialized .why-our-product-block span img{display: inline-block;}
+	.slick-initialized .why-our-product-block span{margin-bottom: 15px;margin-right: 0px;}
+	.why-choose-block{flex-direction: column;text-align: center;}
+	.why-choose-block h6{padding-left: 0px;margin-top: 15px;}
+	
+}
+/* Tablet Layout: 991px. */
+
+@media (min-width:100px) and (max-width: 991px) {
+    .mainmenu, .signUp-btn-block {display: none;}
+	.mobile-menu-wrapper {display: block;}
+    .header-area {padding: 10px 0;}
+	.nav-mobile .signUp-btn-block {display: block;margin: 20px 0px 0px;}
+	.delivers-experience-specification{max-width: 600px;width: 100%;margin: auto;}
+	.delivers-experience-text{width: 100%;max-width: 630px;margin: auto;padding: 40px 15px 0px;}
+	.video-estimonials .col-3{width: 50%;}
+	.video-estimonial-block{margin: 15px 0px;}
+	.mints-edition-text{max-width: 90%;}
+	.footer-area > div{width: 50%;}
+	.footer-bottom{flex-direction: column-reverse;align-items: center;}
+	.footer__copyright{padding-top: 10px;}
+	.footer__bottom-menu ul li{margin:0px 10px;}
+	.footer__bottom-menu ul{flex-wrap: wrap;justify-content: center;}
+	.footer__copyright{text-align: center;}
+	.home-banner-area{background-image: url("../images/banner-mobile-bg.png");}
+	.home-banner-row, .mints-edition-product{flex-direction: column;}
+	.home-banner-img{padding-left: 0px;width: 70%;padding-bottom: 60px;}
+	.banner-leaf-2 {bottom: -20px;}
+	.banner-leaf-1 {left: -50px;top: inherit;bottom: 35px;}
+	.banner-leaf-3 {left: inherit;right: 40px;bottom: 60px;}
+	.home-banner-content{width: 70%;padding-right: 0px;}
+	.mints-edition-product > div{width: 70%;}
+	.mints-edition-product-content{padding-bottom: 30px;text-align: center;}
+	
+	.user-review-all{columns: 2;}
+	.boost-attention-row{flex-direction: column;}
+	.boost-attention-content{padding-top: 30px;width: 100%;}
+	.boost-attention-img{width: 100%;}
+	.why-our-product-mob{padding: 7px 0px;}
+	.why-our-product-mob .slick-list{padding: 0px 60px;}
+	
+}
+
+
+/* Wide Mobile Layout: 767px. */
+
+@media (min-width: 100px) and (max-width: 767px) {
+	.mints-edition-banner{background-size: cover;height: 400px;}
+	.mints-edition-block{flex-direction: column;flex-wrap: wrap;}
+	.mints-edition-block > div{width: 100%;}
+	.mints-edition-text{max-width: 100%;}
+	.mints-edition-content{padding: 60px 15px 30px;}
+	.mints-edition-img{background-size: cover;}
+	.faq-text{padding-right: 0px;}
+}
+
+
+@media (min-width: 100px) and (max-width: 640px) {
+	.home-banner-img{width: 86%;}
+	.banner-leaf-1 {left: -44px;max-width: 110px;}
+	.banner-leaf-2 {bottom: 0px;max-width: 80px;}
+	.banner-leaf-3 {max-width: 80px;bottom: 80px;}
+	.home-banner-content {width: 100%;padding-right: 0px;}
+	.company-review-block{max-width: 350px;margin: 0px auto;width: 100%;}
+	.mint-color-wave{margin-bottom: 70px;}
+	.mint-color-wave::before{height: 70px;}
+	.mints-edition-product > div{width: 100%;}
+	.three-ingredients-row{flex-wrap: wrap;}
+	.three-ingredients-col{width: 100%;}
+	.three-ingredients-text{min-height: 10px;}
+	.footer-area > div{width: 100%;text-align: center;}
+	.footer-social ul, .payment-method ul{justify-content: center;}
+	.footer-social a{margin: 0px auto;}
+	.payment-method ul li{padding: 0px 5px;}
+	.faq-block{padding: 20px;}
+	.faq-block h5{font-size: 16px;}
+	.boost-attention-content{padding-right: 0px;}
+}
+
+@media (min-width: 100px) and (max-width: 580px) {
+	.scrollup{display: none !important;}
+	.mints-edition-img{height: 350px;}
+	.delivers-experience-block{width: 100%;margin-right: 0px !important;margin-top: 0px !important;margin-bottom: 30px;}
+	.delivers-experience-block:last-child{margin-bottom: 0px;}
+	.delivery-steps-line{display: none;}
+	.delivery-steps-area{padding: 20px 0px 40px;}
+	.delivery-steps{flex-wrap: wrap;}
+	.delivers-step{width: 100%;padding: 30px 0px;max-width: 350px;margin: 0px auto;}
+	.mints-edition-banner{height: 340px;}
+	.mints-edition-logo img{max-width: 280px;width: 90%;}
+	
+	.product-details-area{padding: 40px 0px;}
+	.product-details-title h1{font-size: 42px;}
+	.why-our-product-mob .slick-list{padding: 0px 100px;}
+	.why-choose-block{width: 50%;}
+	.user-review-all{columns: 1;}
+	.review-form-show{width: 100%;}
+	.why-choose-area, .why-choose-area-mob{padding: 50px 0px;}
+	.use-bounded-area{padding: 60px 0px;}
+	.boost-attention-img{height: 550px;}
+	
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+    h2 {font-size: 32px;}
+    br {display: none;}
+	.main-btn{padding: 10px 25px;}
+	.logo img{max-width: 220px;}
+	.banner-leaf-1{max-width: 90px;}
+	.banner-leaf-2{max-width: 70px;}
+    .home-banner-area{padding: 60px 0}
+	.home-banner-content .main-btn, .delivers-experience-text .main-btn, .mints-edition-product-content .main-btn, .form-submit{width: 100%;}
+	.home-banner-content h1{font-size: 32px;line-height: normal;}
+	.company-review-area{padding: 40px 0px;}
+	.company-review-block{padding: 20px 0px;}
+	.video-estimonial-title::before{width: 130px;top: 20px;margin-left: -65px;}
+	.video-estimonials .col-3{width: 100%;}
+	.mint-color-wave::before{background-image: url("../images/mint-color-wave-bg-mob.png");height: 40px;}
+	.mint-color-wave{margin-bottom: 40px;}
+	.mints-edition-banner{height: 260px;}
+	.mints-edition-img{height: 320px;}
+	.mints-edition{padding-bottom: 30px;}
+	.mints-edition-way{margin-bottom: 30px;}
+	.faq-area .section-title{padding-bottom: 0px;}
+	
+	.why-our-product-mob .slick-list{padding: 0px 30px;}
+	.product-details-title h1{font-size: 38px;}
+	.choose-product-for{padding: 15px;}
+	.choose-product-thumb{width: 80px !important;height: 80px;line-height: 70px;}
+	.select-pack-label{padding: 8px 15px;}
+	.as-seen-logo{width: 50%;text-align: center !important;}
+	.boost-attention{padding: 50px 0px;}
+	.why-choose-container .section-title{padding-bottom: 0px;}
+	.why-choose-area-mob h2 span{display: block;}
+	.use-bounded-area p{font-size: 20px;}
+	.for-your-lover{bottom: -20px;}
+	.user-review-area{padding-top: 20px;}
+	.boost-attention-img{height: 500px;}
+}
+
+@media (min-width: 100px) and (max-width: 380px) {
+	.banner-leaf-1 {max-width: 70px;left: -30px;bottom: 45px;}
+	.banner-leaf-3 {max-width: 70px;right: 10px;}
+	.mints-edition-banner{height: 220px;}
+	.mints-edition-img{height: 280px;}
+	.faq-block{padding: 15px;}
+	.faq-block h5{font-weight: 400;padding-right: 17px;}
+	.select-purchase-label{font-size: 14px;}
+	.for-you, .for-your-lover{font-size: 14px;}
+	.for-your-lover{padding-top: 8px;padding-right: 40px;width: 150px;bottom: -30px;}
+	.for-you{line-height: 20px;width: 100px;padding-left: 35px;top: -15px;}
+	.use-bounded-area p{padding: 0px 30px;}
+}
+
+@media (min-width: 100px) and (max-width: 320px) {
+    
+}
