@@ -10,7 +10,7 @@ function initScrollAnimations() {
   if (section && attentionshadow && attentionHolder) {
     
     const getStartValue = () => {
-      return window.innerWidth > 995 ? "center center" : "40%";
+      return window.innerWidth > 995 ? "center center" : "50%";
     };
     const getStartValue2 = () => {
         return window.innerWidth > 990 ? "center bottom" : "top bottom";
@@ -19,7 +19,7 @@ function initScrollAnimations() {
         return window.innerWidth > 990 ? "150%" : "100%";
       };
     gsap.to(attentionHolder, {
-      y: () => (window.innerHeight - attentionHolder.clientHeight - 200),
+      y:  -220,
       ease: "none",
       scrollTrigger: {
         trigger: section,
@@ -27,8 +27,7 @@ function initScrollAnimations() {
         start: getStartValue,
         end: () => "+=800",
         scrub: 0.5,
-        markers: false,
-        invalidateOnRefresh: true,
+        markers: true,
       }
     });
 
