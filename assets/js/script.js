@@ -27,7 +27,7 @@ function initScrollAnimations() {
         start: getStartValue,
         end: () => "+=800",
         scrub: 0.5,
-        markers: true,
+        markers: false,
       }
     });
 
